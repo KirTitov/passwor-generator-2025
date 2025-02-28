@@ -1,0 +1,155 @@
+
+/* A Modern CSS Reset */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 100% */
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.text-higlight {
+    color: #E0FA40;
+}
+
+p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 48px;
+    color: #D5D4D8;
+
+}
+
+body {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #303054;
+}
+
+.wrapper {
+    width: 550px;
+    height: 550px;
+    background-color: #1F1F34;
+    border-radius: 24px;
+    padding: 48px;
+}
+
+.btn {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    border-radius: 6px;
+    background-color: #E0FA40;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.btn:hover {
+    background-color: #50FA40;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.28) inset;
+}
+
+hr {
+    border: 0.5px solid #4C4C55;
+    margin: 48px 0;
+}
+
+input {
+    font-size: 20px;
+    font-style: normal;
+    width: 220px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: #333345;
+    border: none;
+    color: #E0FA40;
+}
+
+@media only screen and (max-width: 400px) {
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .description {
+    margin-bottom: 24px;
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .wrapper {
+  padding: 30px 15px 30px 15px;
+  }
+
+  hr {
+    margin: 24px 0;
+  }
+
+}
